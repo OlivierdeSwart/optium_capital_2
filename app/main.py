@@ -47,5 +47,17 @@ if st.session_state.report is not None:
         mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
     )
 
+    # 📊 Monthly Breakdown Toggle
+    if 'month' in df.columns:
+        show_monthly = st.checkbox("📊 Show month-by-month breakdown", key="show_months")
+        if show_monthly:
+            monthly = df[df['entity_id'].isin(
+                [e.strip() for e in st.session_state.last_input.split(",") if e.strip()]
+            )].groupby(['entity_id', 'month'])[
+                ['visa fees', 'mastercard fees', 'visa sales', 'mastercard sales']
+            ].sum().reset_index()
+            st.subheader("Monthly Breakdown")
+            st.dataframe(monthly)
+
 # 👇 Show how much data is loaded
 st.caption(f"{len(df):,} rows loaded from Excel files.")
