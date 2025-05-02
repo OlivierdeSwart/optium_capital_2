@@ -1,0 +1,8 @@
+# Byte-compiled / virtual env
+__pycache__/
+*.py[cod]
+venv/
+
+# Excel and data files
+*.xlsx
+data/processed/*
