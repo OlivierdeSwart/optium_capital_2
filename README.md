@@ -38,9 +38,11 @@ If you don’t have Python installed:
 ### 3. 📦 Install Required Libraries
 
 1. Open the folder where you extracted the project
-2. Click in the folder bar (top of File Explorer or Finder)
-3. Type `cmd` (on Windows) or open **Terminal** (on Mac), then press Enter
-4. In the window that opens, run:
+2. Windows: Click in the folder bar (top of File Explorer) 
+   Type `cmd` (on Windows) or open **Terminal** (on Mac), then press Enter
+   Mac: hit command + space bar at the same time. 
+   Type terminal and hit enter
+3. In the window that opens, make sure you are at the correct folder: optium_capital. Then run:
 
 ```bash
 pip install -r requirements.txt
