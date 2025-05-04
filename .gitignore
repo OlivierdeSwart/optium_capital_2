@@ -4,7 +4,7 @@ __pycache__/
 venv/
 
 # Excel and data files
-*.xlsx
+
 
 
 .DS_Store
