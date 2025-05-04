@@ -4,6 +4,9 @@ __pycache__/
 venv/
 
 # Excel and data files
+*.xlsx
+*.csv
+/scripts/
 
 
 
