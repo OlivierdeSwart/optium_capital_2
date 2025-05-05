@@ -24,14 +24,20 @@ This tool lets you generate financial summaries from hundreds of Excel files, us
 3. Choose **"Download ZIP"**  
 4. Extract the ZIP file to a location like your Desktop  
 
-### 2. 🐍 Install Python
+---
+
+### 2 📂 Add Your Excel Files
+
+Place your `.csv` file into the `data/` folder inside the project.  
+
+### 3. 🐍 Install Python
 
 1. Visit: https://www.python.org/downloads/  
 2. Click the yellow **Download Python 3.13.3** button  
 3. Run the installer  
 4. ✅ **Check the box that says "Add Python to PATH"** before continuing  
 
-### 3. 🖥 Open Command Prompt & Navigate
+### 4. 🖥 Open Command Prompt & Navigate
 
 1. Press the **Windows** key, type `command prompt`, and open it  
 2. Use the following basics to navigate:
@@ -44,7 +50,7 @@ Navigate to the folder that contains `requirements.txt`. Example:
 `C:\Users\Olivier\Downloads\optium_capital_2-main`  
 Use `dir` to confirm the file is there.
 
-### 4. ⚙️ Set Up and Run the App
+### 5. ⚙️ Set Up and Run the App
 
 Run the following lines one at a time in Command Prompt:
 
@@ -69,12 +75,6 @@ To use the app again:
 
 - `venv\Scripts\activate.bat`  
 - `streamlit run app/main.py`
-
----
-
-## 📂 Add Your Excel Files
-
-Place your `.csv` file into the `data/` folder inside the project.  
 
 ---
 
