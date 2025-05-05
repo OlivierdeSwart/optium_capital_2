@@ -71,7 +71,7 @@ If the browser doesn’t open, copy the URL shown in the terminal into your brow
 To use the app again:
 
 1. Open **Command Prompt**
-2. Navigate to your `optium_capital_2-main` folder (e.g. [cd desktop/optium_capital_2-main] or cd "C:\Users\eopti\OneDrive\Desktop\optium_capital_2-main")
+2. Navigate to your `optium_capital_2-main` folder (e.g. [ cd desktop/optium_capital_2-main ] or [ cd "C:\Users\eopti\OneDrive\Desktop\optium_capital_2-main" ])
 3. Run the following:
 
 - `venv\Scripts\activate.bat`  
