@@ -1,4 +1,4 @@
-# 📊 Financial Report Generator
+# 💼 Optium Capital – Financial Report Generator
 
 This tool lets you generate financial summaries from hundreds of Excel files, using a simple browser-based interface — no coding experience needed.
 
@@ -6,80 +6,91 @@ This tool lets you generate financial summaries from hundreds of Excel files, us
 
 ## ✅ What This Tool Does
 
-- Combines multiple Excel files into one unified dataset
-- Lets you search by one or more ENTITY_IDs
-- Shows totals and monthly breakdowns for Visa/MasterCard sales and fees
-- Allows you to export reports as Excel files
+- Combines multiple Excel files into one unified dataset  
+- Lets you search by one or more `ENTITY_ID`s  
+- Shows totals and monthly breakdowns for Visa/MasterCard sales and fees  
+- Allows you to export reports as Excel files  
 
 ---
 
-## 🛠️ Setup Instructions (for Windows or Mac)
+## 🛠️ First-Time Setup (Windows)
 
-Assumes:  
-✅ You don't have Python installed  
-✅ You’ve never used VS Code or a terminal
+> For users who’ve never used Python or a terminal before.
 
-### 1. 📁 Download and Extract This Project
+### 1. 📁 Download and Extract the Project
 
-1. Visit the GitHub repo page https://github.com/OlivierdeSwart/optium_capital
-2. Click the green **"Code"** button
-3. Choose **"Download ZIP"**
-4. Unzip it somewhere easy to find (like your Desktop)
+1. Go to: https://github.com/OlivierdeSwart/optium_capital_2  
+2. Click the green **"Code"** button  
+3. Choose **"Download ZIP"**  
+4. Extract the ZIP file to a location like your Desktop  
 
 ### 2. 🐍 Install Python
 
-If you don’t have Python installed:
+1. Visit: https://www.python.org/downloads/  
+2. Click the yellow **Download Python 3.13.3** button  
+3. Run the installer  
+4. ✅ **Check the box that says "Add Python to PATH"** before continuing  
 
-1. Go to https://www.python.org/downloads/
-2. Click **Download Python**
-3. Run the installer
-4. ✅ On Windows: **Check the box that says "Add Python to PATH"**
+### 3. 🖥 Open Command Prompt & Navigate
 
-### 3. 📦 Install Required Libraries
+1. Press the **Windows** key, type `command prompt`, and open it  
+2. Use the following basics to navigate:
 
-1. Open the folder where you extracted the project
-2. Windows: Click in the folder bar (top of File Explorer) 
-   Type `cmd` (on Windows) or open **Terminal** (on Mac), then press Enter
-   Mac: hit command + space bar at the same time. 
-   Type terminal and hit enter
-3. In the window that opens, make sure you are at the correct folder: optium_capital. Then run:
+- Go up one level: `cd ..`  
+- Go into a folder: `cd folder_name`  
+- List contents: `dir`  
 
-```bash
-pip install -r requirements.txt
-```
+Navigate to the folder that contains `requirements.txt`. Example:  
+`C:\Users\Olivier\Downloads\optium_capital_2-main`  
+Use `dir` to confirm the file is there.
 
-This installs the necessary packages (Streamlit, pandas, Excel support, etc.)
+### 4. ⚙️ Set Up and Run the App
 
-### 4. ▶️ Run the App
+Run the following lines one at a time in Command Prompt:
 
-Still in that same terminal, run:
+- `py -m venv venv`  
+- `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`  
+- `venv\Scripts\activate.bat`  
+- `pip install -r requirements.txt`  
+- `streamlit run app/main.py`  
 
-```bash
-python run.py
-```
+✅ This sets up your environment and launches the app in your browser.  
+If the browser doesn’t open, copy the URL shown in the terminal into your browser manually.
 
-This will open the app in your browser.  
-(If it doesn’t, just copy the link shown in the terminal into your browser.)
+---
 
-### 5. 📂 Add Your Excel Files
+## 🔁 Running the App Later
 
-Place all `.xlsx` files into the `data/` folder inside the project.  
-Each file should be a monthly financial report like the ones you've used before.
+To use the app again:
+
+1. Open **Command Prompt**
+2. Navigate to your `optium_capital_2-main` folder
+3. Run the following:
+
+- `venv\Scripts\activate.bat`  
+- `streamlit run app/main.py`
+
+---
+
+## 📂 Add Your Excel Files
+
+Place your `.csv` file into the `data/` folder inside the project.  
 
 ---
 
 ## ❓ Troubleshooting
 
-- If you see an error about missing Python, recheck that it’s installed
-- Make sure `.xlsx` files go in the correct folder
-- The tool does **not** need internet to run
+- Missing Python? Reinstall and make sure you checked **"Add Python to PATH"**  
+- Place csv file in the correct `data/` folder  
+- No internet connection is required after setup — the app runs locally  
 
 ---
 
-## 🔐 Private & Local
+## 🔐 100% Local & Private
 
-This tool runs entirely on your machine. No data is sent anywhere — your Excel files never leave your computer.
+This tool runs entirely on your computer.  
+No data is uploaded or shared — your Excel files stay secure and private.
 
 ---
 
-Made to save you hours of manual work!
+Made to save you hours of manual work! 💼📈
