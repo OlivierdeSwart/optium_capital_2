@@ -26,8 +26,9 @@ This tool lets you generate financial summaries from hundreds of Excel files, us
 
 ---
 
-### 2 📂 Add Your Excel Files
+### 2 📂 Add Your csv Files
 
+Download csv from dropbox. Audrey/2025-4-25%20SWAY%20Project/Monthly%20Comparisons
 Place your `.csv` file into the `data/` folder inside the project.  
 
 ### 3. 🐍 Install Python
