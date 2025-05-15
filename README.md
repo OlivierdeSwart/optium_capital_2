@@ -76,8 +76,8 @@ To use the app again:
    
    Hugo: cd desktop/optium_capital_2-main  
    or  
-   Elaine: cd "C:\Users\eopti\OneDrive\Desktop\optium_capital_2-main"
-   or
+   Elaine: cd "C:\Users\eopti\OneDrive\Desktop\optium_capital_2-main"  
+   or  
    Tony: cd “C:\Users\trale\OneDrive\Desktop\optium_capital-main”
 
 
